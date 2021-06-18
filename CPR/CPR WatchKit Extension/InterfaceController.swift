@@ -27,6 +27,7 @@ class InterfaceController: WKInterfaceController {
 
     
     @IBAction func cprFunc() {
-        
+        WKInterfaceDevice.current().play(.click)
     }
+    
 }

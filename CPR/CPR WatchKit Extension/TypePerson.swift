@@ -15,6 +15,6 @@ class TypePerson: WKInterfaceController {
     
     
     @IBAction func adultFunc() {
-        
+        WKInterfaceDevice.current().play(.click)
     }
 }

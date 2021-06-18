@@ -13,7 +13,8 @@
                     <items>
                         <button width="1" alignment="left" title="CPR" id="Xgx-yF-rhR">
                             <connections>
-                                <action selector="cprFunc" destination="AgC-eL-Hgc" id="XlX-Ds-952"/>
+                                <action selector="cprFunc" destination="AgC-eL-Hgc" id="F1T-TJ-zIx"/>
+                                <segue destination="CG6-Kb-Llr" kind="push" identifier="firstSegue" id="abA-Qy-JYq"/>
                             </connections>
                         </button>
                     </items>
@@ -32,6 +33,7 @@
                         <button width="1" alignment="left" title="Adult" id="cYP-bM-adH">
                             <connections>
                                 <action selector="adultFunc" destination="CG6-Kb-Llr" id="t8Y-u1-Ja1"/>
+                                <segue destination="aLV-nP-2wb" kind="push" id="jsp-Vp-NfL"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Child" id="l6d-Bh-LrG"/>
@@ -50,7 +52,24 @@
                 <controller identifier="adult" id="aLV-nP-2wb" customClass="Adult" customModule="CPR_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Adult" id="QCj-yW-3ds"/>
+                        <timer width="136" alignment="left" textAlignment="center" id="6tt-Xd-Kdt"/>
+                        <button width="1" alignment="left" title="Start" id="rjp-fA-UaE">
+                            <connections>
+                                <action selector="startBtn" destination="aLV-nP-2wb" id="tLV-it-LPE"/>
+                            </connections>
+                        </button>
+                        <imageView alignment="left" id="sPe-7q-ajg"/>
+                        <button width="1" alignment="left" title="Reset" id="gyF-7I-Xdb">
+                            <connections>
+                                <action selector="resetnBtn" destination="aLV-nP-2wb" id="TZ3-zi-B5q"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="myTimer" destination="6tt-Xd-Kdt" id="dP1-yW-gnd"/>
+                        <outlet property="reset" destination="gyF-7I-Xdb" id="V0u-Xu-MTN"/>
+                        <outlet property="start" destination="rjp-fA-UaE" id="Dpj-e9-e1c"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="727" y="345"/>
