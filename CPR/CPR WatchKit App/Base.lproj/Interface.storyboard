@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CPR_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="CPR" id="Xgx-yF-rhR">
+                            <connections>
+                                <action selector="cprFunc" destination="AgC-eL-Hgc" id="XlX-Ds-952"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="cprBtn" destination="Xgx-yF-rhR" id="2hH-at-Ohp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--typePerson-->
+        <scene sceneID="Z4x-2U-MAR">
+            <objects>
+                <controller identifier="typePerson" id="CG6-Kb-Llr" customClass="TypePerson" customModule="CPR_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Adult" id="cYP-bM-adH">
+                            <connections>
+                                <action selector="adultFunc" destination="CG6-Kb-Llr" id="t8Y-u1-Ja1"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Child" id="l6d-Bh-LrG"/>
+                        <button width="1" alignment="left" title="Infant" id="MsT-m7-xXg"/>
+                    </items>
+                    <connections>
+                        <outlet property="adultBtn" destination="cYP-bM-adH" id="s1I-sE-WoB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+        <!--adult-->
+        <scene sceneID="V9e-6d-tjW">
+            <objects>
+                <controller identifier="adult" id="aLV-nP-2wb" customClass="Adult" customModule="CPR_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Adult" id="QCj-yW-3ds"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="727" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="CPR_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="CPR_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="643"/>
+        </scene>
+    </scenes>
+</document>
