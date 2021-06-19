@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DuO-Rp-wle">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -74,6 +74,20 @@
             </objects>
             <point key="canvasLocation" x="727" y="345"/>
         </scene>
+        <!--Watch Face Controller-->
+        <scene sceneID="w9j-Zc-hVj">
+            <objects>
+                <controller id="DuO-Rp-wle" customClass="WatchFaceController" customModule="CPR_WatchKit_Extension">
+                    <items>
+                        <imageView alignment="left" image="inner10suffix" id="cp8-RH-byX"/>
+                    </items>
+                    <connections>
+                        <outlet property="watchFace" destination="cp8-RH-byX" id="aVp-hD-PKV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1033" y="340"/>
+        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
@@ -106,4 +120,7 @@
             <point key="canvasLocation" x="698" y="643"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="inner10suffix" width="300" height="300"/>
+    </resources>
 </document>

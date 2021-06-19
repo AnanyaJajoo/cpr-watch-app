@@ -18,6 +18,7 @@
 		14986C34267CCB0200D83E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14986C33267CCB0200D83E05 /* Assets.xcassets */; };
 		14986C48267CCB8100D83E05 /* Adult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14986C47267CCB8100D83E05 /* Adult.swift */; };
 		14986C4D267CCC1900D83E05 /* TypePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14986C4C267CCC1900D83E05 /* TypePerson.swift */; };
+		29C16FDA267E9B1B008CF604 /* WatchFaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C16FD9267E9B16008CF604 /* WatchFaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		14986C36267CCB0200D83E05 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		14986C47267CCB8100D83E05 /* Adult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adult.swift; sourceTree = "<group>"; };
 		14986C4C267CCC1900D83E05 /* TypePerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePerson.swift; sourceTree = "<group>"; };
+		29C16FD9267E9B16008CF604 /* WatchFaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		14986C2A267CCB0200D83E05 /* CPR WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				29C16FD9267E9B16008CF604 /* WatchFaceController.swift */,
 				14986C2B267CCB0200D83E05 /* InterfaceController.swift */,
 				14986C2D267CCB0200D83E05 /* ExtensionDelegate.swift */,
 				14986C2F267CCB0200D83E05 /* NotificationController.swift */,
@@ -266,6 +269,7 @@
 				14986C30267CCB0200D83E05 /* NotificationController.swift in Sources */,
 				14986C32267CCB0200D83E05 /* ComplicationController.swift in Sources */,
 				14986C48267CCB8100D83E05 /* Adult.swift in Sources */,
+				29C16FDA267E9B1B008CF604 /* WatchFaceController.swift in Sources */,
 				14986C2E267CCB0200D83E05 /* ExtensionDelegate.swift in Sources */,
 				14986C2C267CCB0200D83E05 /* InterfaceController.swift in Sources */,
 			);
