@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140E38A2267EC252002FBB65 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E38A1267EC252002FBB65 /* Child.swift */; };
+		140E38A4267EC63A002FBB65 /* Infant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E38A3267EC63A002FBB65 /* Infant.swift */; };
 		14986C18267CCB0100D83E05 /* CPR WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 14986C17267CCB0100D83E05 /* CPR WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		14986C1E267CCB0100D83E05 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14986C1C267CCB0100D83E05 /* Interface.storyboard */; };
 		14986C20267CCB0200D83E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14986C1F267CCB0200D83E05 /* Assets.xcassets */; };
@@ -64,6 +66,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		140E38A1267EC252002FBB65 /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
+		140E38A3267EC63A002FBB65 /* Infant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infant.swift; sourceTree = "<group>"; };
 		14986C13267CCB0100D83E05 /* CPR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14986C17267CCB0100D83E05 /* CPR WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CPR WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14986C1D267CCB0100D83E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				14986C36267CCB0200D83E05 /* PushNotificationPayload.apns */,
 				14986C47267CCB8100D83E05 /* Adult.swift */,
 				14986C4C267CCC1900D83E05 /* TypePerson.swift */,
+				140E38A1267EC252002FBB65 /* Child.swift */,
+				140E38A3267EC63A002FBB65 /* Infant.swift */,
 			);
 			path = "CPR WatchKit Extension";
 			sourceTree = "<group>";
@@ -267,9 +273,11 @@
 			files = (
 				14986C4D267CCC1900D83E05 /* TypePerson.swift in Sources */,
 				14986C30267CCB0200D83E05 /* NotificationController.swift in Sources */,
+				140E38A2267EC252002FBB65 /* Child.swift in Sources */,
 				14986C32267CCB0200D83E05 /* ComplicationController.swift in Sources */,
 				14986C48267CCB8100D83E05 /* Adult.swift in Sources */,
 				29C16FDA267E9B1B008CF604 /* WatchFaceController.swift in Sources */,
+				140E38A4267EC63A002FBB65 /* Infant.swift in Sources */,
 				14986C2E267CCB0200D83E05 /* ExtensionDelegate.swift in Sources */,
 				14986C2C267CCB0200D83E05 /* InterfaceController.swift in Sources */,
 			);
